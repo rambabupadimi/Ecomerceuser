@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/order_toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:textColor="#fff">
+        </TextView>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_toolbar"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_shape"
+            android:hint="7095362286"
+            android:padding="12dp"
+            android:id="@+id/order_phone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rectangle_shape"
+                android:hint="Address"
+                android:gravity="top"
+                android:padding="12dp"
+                android:id="@+id/order_address"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Location"
+                android:padding="6dp"
+                android:layout_gravity="right"
+                android:id="@+id/set_location"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_shape"
+            android:hint="Door no:"
+            android:padding="12dp"
+            android:id="@+id/order_door_no"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:text="CONFIRM ORDER"
+        android:textColor="#fff"
+        android:id="@+id/confirm_order"
+
+        />
+</RelativeLayout>

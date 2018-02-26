@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_toolbar"
+        android:background="@color/colorPrimary">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            style="@style/CustomTextView"
+            android:text="Items"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            />
+
+
+
+
+</RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_toolbar"
+        android:id="@+id/item_recyclerview">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

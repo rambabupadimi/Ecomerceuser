@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="12dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/header_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:padding="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:gravity="center_vertical">
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/noimage"
+           android:id="@+id/cart_image"
+           android:tint="#ddd"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            android:padding="6dp"
+            android:id="@+id/cart_title"
+            />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="right"
+>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="qty"
+               android:padding="6dp"
+               android:layout_gravity="center_vertical"
+               android:id="@+id/cart_quantity"
+               />
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+               android:layout_gravity="center_vertical"
+            android:padding="6dp"
+               android:id="@+id/cart_price"/>
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:tint="#E64A19"
+               android:layout_gravity="center_vertical"
+               android:src="@drawable/cancel"
+               android:padding="6dp"
+               android:id="@+id/cart_remove"/>
+
+       </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

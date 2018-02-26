@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43A047</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="order_received_light">#DCEDC8</color>
+    <color name="order_received_dark">#689F38</color>
+
+
+<color name="order_sent_light">#BBDEFB</color>
+    <color name="order_sent_dark">#1976D2</color>
+
+    <color name="order_inprogress_light">#FFCCBC</color>
+    <color name="order_inprogress_dark">#E64A19</color>
+
+    <color name="text_color">#4c4c4c</color>
+</resources>

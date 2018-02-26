@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ecomerceuser</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="just_now">just now</string>
+    <string name="minute_ago">minute ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="hour_ago">hour_ago</string>
+    <string name="hours_ago">hours_ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="days_ago">days_ago</string>
+    <string name="api_key">AIzaSyBwSSYFdBdbtlJ_LeMWY2xKeOLB2iC6EFM</string>
+</resources>

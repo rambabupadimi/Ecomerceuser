@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="c.com.ecomerceuser.ProfileViewActivity"
+>
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/default_user_men_icon"
+                android:layout_gravity="center"
+                app:border_width="6dp"
+                android:padding="6dp"
+                app:border_color="@color/colorPrimaryDark"
+                android:id="@+id/view_profile_image"
+                android:transitionName="profile_image"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rambabu Padimi"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:transitionName="profile_name"
+                android:gravity="center"
+                android:id="@+id/view_profile_name"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:background="@color/colorPrimary">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="24dp"
+    android:layout_marginLeft="24dp">
+
+
+    <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Babu.ramu111@gmail.com"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:id="@+id/view_profile_email"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+91 7095362286"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:id="@+id/view_profile_phone"/>
+</LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
